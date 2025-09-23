@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>
+            
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/all6.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+       
+
+
+    </head>
+    <body > 
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top p-2 " style="border-radius: 10px 0 0 0;">
+          <div class="container-fluid">
+            <img src="image/logo.jpeg" style="width: 80px; height:80px;" class="rounded" alt="img">
+
+            <a class="navbar-brand text-warning p-2 fs-2 text-opacity-50 " href="#"> Urben Bite</a>
+            <div style="width: 1px; height:80px" class=" bg-white opacity-50">
+
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white active focus p-2" aria-current="page" href="#"><span class=" text-warning text-opacity-50">H</span>ome</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white focus p-2" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white focus p-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class=" text-warning text-opacity-50">M</span>enu
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">PIZZA</a></li>
+                    <li><a class="dropdown-item" href="#">BURGER</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">HEALTHY SALAD</a></li>
+                    <li><a class="dropdown-item" href="#">MEALS</a></li>
+                    <li><a class="dropdown-item" href="#">Crispy Chicken</a></li>
+                    <li><a class="dropdown-item" href="#">More..</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white focus p-2" href="#" tabindex="-1" aria-disabled="true">CONTACT US</a>
+                </li>
+              </ul>
+              <form class="d-flex p-2">
+                <input class="form-control me-2 h-25" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-warning h-25 " type="submit ">Search</button>
+                
+              </form>
+              <button type="button" class="btn btn1 text-warning border-warning " data-bs-toggle="modal" data-bs-target="#myModal" style=" background-color:rgb(0, 0, 0)">
+                  Log in
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- modal -->
+      <div>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h3 class="modal-title">Log in</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            
+              <!-- Modal body -->
+              <div class="modal-body">
+                 <h6 class=" pt-2">Email address</h6>
+                 <input type="email" name="email"  placeholder="Enter your email" class="w-100 border-0 shadow-sm p-2 rounded-2">
+                 <h6 class=" pt-2">Password</h6>
+                 <input type="password" placeholder="Enter your password" class="w-100 border-0 shadow-sm p-2 rounded-2">
+                 <input type="checkbox" ><span class="px-2">Remember me</span>
+              </div>
+            
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-warning  w-100" data-bs-dismiss="modal">Log in</button>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- /header -->
+         <!-- //////////////////////////////////////////////////////// -->
+         <!-- main -->
+      <main >
+          <div id="carouselExampleCaptions" class="carousel slide position-relative" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active vh-100" ">
+                <img src="image/pizza.jpeg" class="d-block w-100 h-100 " alt="img">
+                <div class="carousel-caption d-none d-md-block w-75 border-1 border-warning m-auto my-4 rounded-2" style="background-color:rgba(0, 0, 0, .5); ">
+                  <h3">PIZZA</h3>
+                  <p class=" text-capitalize">that pizza was absolutely amazing ! we couldn't get enough  </p>
+                  <button type="button" class="btn btn1  bg-black opacity-50 text-warning rounded-2 border-1 border-warning "> call us</button>
+                </div>
+              </div>
+              <div class="carousel-item vh-100" >
+                <img src="image/burger.jpg" class="d-block w-100 h-100" alt="img">
+                <div class="carousel-caption d-none d-md-block w-75 border-1 border-warning m-auto my-4 rounded-2" style="background-color:rgba(0, 0, 0, .5); "">
+                  <h3>BURGER</h3>
+                  <p class=" text-capitalize">we had such a great time with that burger juicy and perfect </p>
+                  <button type="button" class="btn btn1  bg-black opacity-50 text-warning rounded-2 border-1 border-warning "> call us</button>
+                </div>
+              </div>
+              <div class="carousel-item vh-100">
+                <img src="image/salad.jpg" class="d-block w-100 h-100"  alt="img">
+                <div class="carousel-caption d-none d-md-block w-75 border-1 border-warning m-auto my-4 rounded-2" style="background-color:rgba(0, 0, 0, .5); "">
+                  <h3>SALAD</h3>
+                  <p class=" text-capitalize">that salad was surprisingly amazing who know healthy could tested this good</p>
+                  <button type="button" class="btn btn1  bg-black opacity-50 text-warning rounded-2 border-1 border-warning "> call us</button>
+                </div>
+              </div>
+              <div class="carousel-item vh-100" >
+                <img src="image/chicken.jpeg" class="d-block w-100 h-100"  alt="img">
+                <div class="carousel-caption d-none d-md-block w-75 border-1 border-warning m-auto my-4 rounded-2" style="background-color:rgba(0, 0, 0, .5); "">
+                  <h3>CHICKEN</h3>
+                  <p class=" text-capitalize"> didn't expect chicken to tested this good healthy and delicious in one bite! </p>
+                  <button type="button" class="btn btn1  bg-black opacity-50 text-warning rounded-2 border-1 border-warning "> call us</button>
+                </div>
+                
+              </div>
+            </div>
+            <div class="  position-fixed top-50 z-3 end-0" style="margin-top:-140px ;"  >
+              <a class=" links-hover d-block px-2 fs-1 text-warning opacity-75 " href="#"><i class="fa-brands fa-square-facebook"></i></a>
+              <a class=" links-hover d-block px-2 fs-1 text-warning opacity-75 " href="#"><i class="fa-brands fa-square-twitter"></i>
+              <a class=" links-hover d-block px-2 fs-1 text-warning opacity-75 " href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+              <a class=" links-hover d-block px-2 fs-1 text-warning opacity-75 " href="#"><i class="fa-brands fa-square-instagram"></i></a>
+              <a class=" links-hover d-block px-2 fs-1 text-warning opacity-75 " href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            
+          </div>
+          
+      </main> 
+      <!-- /main -->
+      <!-- ////////////////////////////////////////////////////////////////////////// -->
+       <!-- sec1 -->
+      <div class="bg-secondary w-100  py-3 flex-column ">
+        <div class=" m-0 w-100 py-3 px-1 bg-dark opacity-75 rounded-top-2">
+          <h3 class="fw-bold text-warning p-2">Welcome</h3>
+          <p class=" text-white p-2 fs-6">
+            Welcome To Urban Bite – Step Into A World Of Gourmet Fast Food Crafted With Passion, 
+            Precision, And Premium Ingredients. Whether You're Craving A Juicy Burger, 
+            Artisanal Pizza, Or A Fresh, Vibrant Salad – We've Redefined Fast Dining To Offer 
+            You Elegance, Flavor, And Comfort In Every Bite. Sit Back, Relax, And Let Us Serve You 
+            Excellence — Fast.
+          </p>
+          <button type="button" class=" btn btn-warning p-1 m-2">Learn More</button>
+        </div>
+        <hr>
+        <div class=" m-0 w-100 h-25 bg-dark  opacity-75">
+          <h2 class=" text-center py-5 text-capitalize text-warning text-opacity-50 fst-italic" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+            the most famous dishes in our restaurant
+          </h2>
+
+        </div>
+        
+        <div class=" m-0 w-100 py-3 opacity-75 mt-3">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item rounded-1">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button fs-3 fst-italic " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:rgba(250, 165, 51,.5);">
+                  Fried Chicken
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                     A crispy and flavorful meal made with tender chicken pieces, seA crispy and flavorful meal made with tender chicken pieces, seasoned with special, coaled in a golden crunchy crust. Perfectl fried and served hot with fries ,coleslaw, or your favorite sauce
+                  </p>
+                
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-1">
+              <h2 class="accordion-header " id="headingTwo">
+                <button class="accordion-button collapsed mt-1 fs-3 fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:rgba(250, 165, 51,.5);">
+                  Types of Salad
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Enjoy a variety of fresh and flavorful made with hand-picked ingredients. Cheese from classic Caesar salad, fresh garden salad ,tangy Greek salad with olives and feta ,or creamy coleslaw perfect as a healthy meal.  
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-1">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed my-1 fs-3 fst-italic " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:rgba(250, 165, 51,.5);">
+                 Type of Pizza
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    iscover a range of delicious pizzas to satisfy every craving. From the classic Margherita with fresh basil and mozzarella, to Pepperoni loaded with spicy slices, to BBQ Chicken with tangy sauce, or Veggie pizza topped with colorful vegetables. Hot cheesy, and freshly baked every time.    
+                  </p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class=" w-100  bg-dark text-white rounded-2">
+                  <h2  class=" text-center py-5 text-capitalize text-warning text-opacity-50 fst-italic" > Translate From Arabic to English</h2>
+              </div>
+              <div class=" w-100  pb-5 bg-gradient " style="background-color:#766414;">
+                 <h4 class="p-2 " >
+                   Write And Translate <span class=" text-warning"> Press Here</span>
+                 </h4>
+                 <!-- Button trigger modal -->
+                <button type="button" class="btn btn-warning mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Copy
+                </button>
+                </div>
+                <div class="form-floating mt-4" >
+                  <textarea class="form-control" placeholder="اكتب هنا ..."  id="floatingTextarea2" style="height: 150px"></textarea>
+                  <label for="floatingTextarea2">Translate:</label>
+                </div>
+              </div>
+            </div>
+            <div class=" w-100  bg-dark text-white rounded-2">
+                  <h2  class=" text-center py-5 text-capitalize text-warning text-opacity-50 fst-italic" > Translate From Arabic to French</h2>
+              </div>
+              <div class=" w-100  pb-5 bg-gradient" style="background-color:#766414;">
+                 <h4 class="p-2" >
+                   Write And Translate <span class=" text-warning"> Press Here</span>
+                 </h4>
+                 <!-- Button trigger modal -->
+                <button type="button" class="btn btn2 btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Copy
+                </button>
+                <button class=" alert alert-secondary text-dark  rounded-5 p-1 visually-hidden  mt-3" style=" width :120px ; " > Copied!</button>
+                <div class="form-floating mt-4">
+                  <textarea class="form-control" placeholder="اكتب هنا ..."  id="floatingTextarea2" style="height: 150px"></textarea>
+                  <label for="floatingTextarea2">Translate:</label>
+                </div>
+              </div>
+              <div class=" w-100  bg-dark text-white rounded-2">
+                  <h2  class=" text-center py-5 text-capitalize text-warning text-opacity-50 fst-italic" > Translate From Arabic to Germany</h2>
+              </div>
+              <div class=" w-100  pb-5 bg-gradient " style="background-color:#766414;">
+                 <h4 class="p-2" >
+                   Write And Translate <span class=" text-warning"> Press Here</span>
+                 </h4>
+                 <!-- Button trigger modal -->
+                <button type="button" class="btn btn2 btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Copy
+                </button>
+                <button class=" alert alert-secondary text-dark  rounded-5 p-1 visually-hidden  mt-3" style=" width :120px ; " > Copied!</button>
+                <div class="form-floating mt-4">
+                  <textarea class="form-control" placeholder="اكتب هنا ..."  id="floatingTextarea2" style="height: 150px"></textarea>
+                  <label for="floatingTextarea2">Translate:</label>
+                </div>
+
+              </div>
+            </div>            
+            
+          </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Restaurant</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                 <p>
+                   the massage copied!
+                 </p>
+              </div>
+              <div>
+                <button type="button" class="btn btn-secondary float-end m-3" data-bs-dismiss="modal">OK</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div> 
+      <!-- /////////////////////////////////////////// -->
+      <!-- se2 -->
+       <div class=" bg">
+        <div class= " d-flex flex-column justify-content-around w-100 bg-secondary"   >
+
+          <div class=" container-fluid  bg-dark text-white rounded-2" style="margin-top:50px;" >
+             <h2  class=" text-center py-4 text-capitalize  text-warning text-opacity-50 fst-italic " >.. Popular Dishes in our restaurant ..</h2>
+          </div>
+          <div class= " container-fluid row d-flex justify-content-center align-items-center gap-5 py-3"  >
+            <!-- card1 -->
+             <div class="card card1 col-4   my-3" style="width: 20rem;">
+               <img src="image/card1.jpg" class="card-img-top"  height="300px" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title text-dark text-opacity-50 fst-italic ">SALAD</h5>
+                  <a href="#" class="btn btn-warning" style="margin-left:180px; width:110px; height:35px "> SHOW</a>
+                  <p class="card-text text-capitalize">Some example some text example text .John Doe is an architect engineer</p>
+                  
+                </div>
+              </div>
+              <!-- card2 -->
+             <div class="card card1 col-4  my-3" style="width: 20rem;">
+               <img src="image/card2.jpg" class="card-img-top" height="300px" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title text-dark text-opacity-50 fst-italic ">FRIEDES</h5>
+                  <a href="#" class="btn btn-warning" style="margin-left:140px; width:110px; height:35px"> SHOW</a>
+                  <p class="card-text py-2">Some example some text example text .John Doe is an architect engineer</p>
+                  
+                </div>
+              </div>
+              <!-- card3 -->
+             <div class="card card1 col-4  my-3" style="width: 20rem;">
+               <img src="image/card3.jpg" class="card-img-top" height="300px" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title text-dark text-opacity-50 fst-italic ">SHAWERMA</h5>
+                  <a href="#" class="btn btn-warning" style="margin-left:140px; width:110px; height:35px"> SHOW</a>
+                  <p class="card-text py-2">Some example some text example text .John Doe is an architect engineer</p>
+                  
+                </div>
+              </div>
+              <!-- card4 -->
+             <div class="card card1 col-4  my-3" style="width: 20rem;">
+               <img src="image/card4.jpg" class="card-img-top" height="300px" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title text-dark text-opacity-50 fst-italic ">CHICKEN</h5>
+                  <a href="#" class="btn  btn-warning" style="margin-left:140px; width:110px; height:35px"> SHOW</a>
+                  <p class="card-text py-2">Some example some text example text .John Doe is an architect engineer</p>
+                  
+                </div>
+              </div>
+              <!-- card5 -->
+             <div class="card card1 col-4  my-3" style="width: 20rem;">
+               <img src="image/card5.jpg" class="card-img-top" height="300px" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title text-dark text-opacity-50 fst-italic ">PIZZA</h5>
+                  <a href="#" class="btn  btn-warning" style="margin-left:140px; width:110px; height:35px"> SHOW</a>
+                  <p class="card-text py-2">Some example some text example text .John Doe is an architect engineer</p>
+                  
+                </div>
+              </div>
+              <!-- card6 -->
+             <div class="card card1 col-4  my-3" style="width: 20rem;">
+               <img src="image/card6.jpg" class="card-img-top"height="300px" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title text-dark text-opacity-50 fst-italic ">MEAT</h5>
+                  <a href="#" class="btn  btn-warning" style="margin-left:140px; width:110px; height:35px"> SHOW</a>
+                  <p class="card-text py-2">Some example some text example text .John Doe is an architect engineer</p>
+                  
+                </div>
+              </div>
+              <!-- card7 -->
+             <div class="card card1 col-4  my-3" style="width: 20rem;">
+               <img src="image/card7.jpg" class="card-img-top"height="300px" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title text-dark text-opacity-50 fst-italic ">BURGER</h5>
+                  <a href="#" class="btn  btn-warning" style="margin-left:140px; width:110px; height:35px"> SHOW</a>
+                  <p class="card-text py-2">Some example some text example text .John Doe is an architect engineer</p>
+                  
+                </div>
+              </div>
+              <!-- card8 -->
+             <div class="card card1 col-4  my-3" style="width: 20rem;">
+               <img src="image/card-8.jpg" class="card-img-top"  height="300px" alt="img">
+                <div class="card-body">
+                  <h5 class="card-title text-dark text-opacity-50 fst-italic ">MEAL</h5>
+                  <a href="#" class="btn btn-warning " style="margin-left:140px; width:110px; height:35px"> SHOW</a>
+                  <p class="card-text py-2">Some example some text example text .John Doe is an architect engineer</p>
+                  
+                </div>
+              </div>
+          </div>
+
+        </div>
+
+       </div>
+       <!-- /////////////////////////////////////////// -->
+      <!-- sec3 -->
+       <div class= " d-flex flex-column justify-content-around w-100 bg-secondary"   >
+          <hr>
+          <div class=" container-fluid  bg-dark text-white rounded-2"  >
+             <h2  class=" text-center py-4 text-capitalize text-warning text-opacity-50 fst-italic" >.. Thanks For ..</h2>
+          </div>
+          <!--//////////////////////////  -->
+          <div class="  d-md-flex justify-content-center  align-items-center m-auto gap-5 py-5">
+            <!-- ///1 -->
+            <div class="card card2 bg-dark text-white rounded-5 border-0 position-relative m-auto mt-4 " style="width:250px">
+              <img src="image/img1.jpg" class="rounded-5" width="250px" height="350px" alt="img">
+              <div class="card-img-overlay position-absolute z-1 bg-gradient  rounded-5" style="background-color: rgba(0,0,0,.5)">
+                <div>
+                  <p class="card-title ">All Thanks And Appreciation</p>
+                  <p class="card-text"> <i class="far fa-clock"></i> Joune 22,2025</p>
+                  <div class="pt-4">
+                    <img src="image/img1.jpg" width="80px" height="120px" class="  rounded-top-pill rounded-bottom-pill mt-5" alt="img">
+                  </div>
+                  <div>
+                    <span class="d-block">Eng.Salem Mohamed </span>
+                    <span class=" d-block">Director Of UI/UX </span>
+                  </div>
+
+                </div>
+                
+              </div>
+            </div>
+            <!-- ////2 -->
+            <div class="card card2 bg-dark text-white rounded-5 border-0 position-relative m-auto mt-4" style="width:250px">
+              <img src="image/img2.jpg" class="rounded-5 " width="250px" height="350px" alt="img">
+              <div class="card-img-overlay position-absolute bg-gradient rounded-5" style="background-color: rgba(0,0,0,.5)">
+                <p class="card-title ">All Thanks And Appreciation</p>
+                <p class="card-text"><i class="far fa-clock"></i> Joune 22,2025</p>
+                
+                <div class="pt-4">
+                    <img src="image/img2.jpg" width="80px" height="120px" class="  rounded-top-pill rounded-bottom-pill mt-5" alt="img">
+                  </div>
+                  <div>
+                    <span class=" d-block">Eng.Mohamed Hady </span>
+                    <span class=" d-block">Content Creator </span>
+                  </div>
+
+              </div>
+            </div>
+            <!-- /////3 -->
+            <div class="card card2 bg-dark text-white rounded-5 border-0 position-relative m-auto mt-4" style="width:250px">
+              <img src="image/img3.jpg" class="rounded-5" width="250px" height="350px" alt="img">
+              <div class="card-img-overlay position-absolute  bg-gradient rounded-5" style="background-color: rgba(0,0,0,.5)">
+                <p class="card-title ">All Thanks And Appreciation</p>
+                <p class="card-text"><i class="far fa-clock"></i> Joune 22,2025</p>
+                <div class="pt-4">
+                    <img src="image/img3.jpg" width="80px" height="120px" class="  rounded-top-pill rounded-bottom-pill mt-5" alt="img">
+                  </div>
+                  <div>
+                    <span class=" d-block">Eng.Amgad Fathy</span>
+                    <span class=" d-block">Wep Developer</span>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- /////////////////////////////// -->
+          <div class=" container-fluid text-white rounded-2"  >
+             <h2  class=" text-center py-4 text-capitalize text-warning text-opacity-50 fst-italic" >restaurant news</h2>
+          </div>
+          <!-- ////////////////////////////////// -->
+           <!-- ////////// 1 -->
+          <div class="py-5  mt-4">
+            <div class="container card mb-3 " >
+            <div class="row g-0">
+              <div class="col-md-4 order-md-last clp1" style="height:300px; ">
+                  <img src="image/pizza.jpeg" height="300px" width="100%" alt=" img">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title text-dark text-opacity-50 fst-italic">Podcast Title</h3>
+                  <p class="card-text"> Mon, May 25th 2020</p>
+                  <div class="progress bg-warning-subtle" style="width:90px ; height:7px">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 100% ;transition: 1s;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <p class="card-text">
+                    In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include 
+                    Innovation And Renewal In Every Detail Of Our Dishes And Services. 
+                    We Are Always Keen To Provide Everything New For Lovers Of Distinctive Taste, 
+                    From Seasonal Dishes Made With The Finest Fresh Ingredients, 
+                    To The Special Offers We Constantly Prepare For You To Enjoy A Unique And Unforgettable Experience.
+                  </p>
+                  <div class="gap-2" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-dark text-warning text-opacity-50"> <i class="fas fa-microphone"></i> <span>Podcast</span> </button>
+                    <button type="button" class="btn btn-dark text-warning text-opacity-50"><i class="far fa-clock"></i> <span>43 Mins</span> </button>
+                    <button type="button" class="btn btn-dark text-warning text-opacity-50"> <i class="fas fa-play"></i> <span>Play Apisade</span> </button>
+                  </div>
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
+          <!-- //////2 -->
+           <div class="container card mb-3 " >
+            <div class="row g-0">
+              <div class="col-md-4 clp2 " style="height:300px; ">
+                <img src="image/card4.jpg" height="300px" width="100%"   alt="img">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title text-dark text-opacity-50 fst-italic">Podcast Title</h3>
+                  <p class="card-text"> Mon, May 25th 2020</p>
+                  <div class="progress bg-warning-subtle" style="width:90px ; height:7px">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 100%; transition: 1s;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <p class="card-text">
+                    In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include 
+                    Innovation And Renewal In Every Detail Of Our Dishes And Services. 
+                    We Are Always Keen To Provide Everything New For Lovers Of Distinctive Taste, 
+                    From Seasonal Dishes Made With The Finest Fresh Ingredients, 
+                    To The Special Offers We Constantly Prepare For You To Enjoy A Unique And Unforgettable Experience.
+                  </p>
+                  <div class="gap-2" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-dark text-warning text-opacity-50"> <i class="fas fa-microphone"></i> <span>Podcast</span> </button>
+                    <button type="button" class="btn btn-dark text-warning text-opacity-50"><i class="far fa-clock"></i> <span>43 Mins</span> </button>
+                    <button type="button" class="btn btn-dark text-warning text-opacity-50"> <i class="fas fa-play"></i> <span>Play Apisade</span> </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ///////// 3 -->
+           <div class="container card mb-3 ">
+            <div class="row g-0">
+               <div class="col-lg-4 order-md-last clp1" style="height:300px;">
+                <img src="image/card9.jpg" height="300px" width="100%" alt="img">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title text-dark text-opacity-50 fst-italic">Podcast Title</h3>
+                  <p class="card-text"> Mon, May 25th 2020</p>
+                  <div class="progress bg-warning-subtle" style="width:90px ; height:7px">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 100%; transition: 1s;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                   <p class="card-text">
+                    In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include 
+                    Innovation And Renewal In Every Detail Of Our Dishes And Services. 
+                    We Are Always Keen To Provide Everything New For Lovers Of Distinctive Taste, 
+                    From Seasonal Dishes Made With The Finest Fresh Ingredients, 
+                    To The Special Offers We Constantly Prepare For You To Enjoy A Unique And Unforgettable Experience.
+                  </p>
+                  <div class="gap-2" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-dark text-warning text-opacity-50"> <i class="fas fa-microphone"></i> <span>Podcast</span> </button>
+                    <button type="button" class="btn btn-dark text-warning text-opacity-50"><i class="far fa-clock"></i> <span>43 Mins</span> </button>
+                    <button type="button" class="btn btn-dark text-warning text-opacity-50"> <i class="fas fa-play"></i> <span>Play Apisade</span> </button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <!-- //////////4 -->
+           <div class=" container card mb-3 " >
+            <div class="row g-0">
+              <div class="col-md-4 clp2" style="height:280px ;">
+                <img src="image/card3.jpg" width="100%" height="300px"  alt="img">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title text-dark text-opacity-50 fst-italic">Podcast Title</h3>
+                  <p class="card-text"> Mon, May 25th 2020</p>
+                  <div class="progress bg-warning-subtle " style="width:90px ; height:7px" >
+                    <div class="progress-bar bg-warning" role="progressbar" style="width:100% ; transition: 1s;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100 "></div>
+                  </div>
+                   <p class="card-text">
+                    In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include 
+                    Innovation And Renewal In Every Detail Of Our Dishes And Services. 
+                    We Are Always Keen To Provide Everything New For Lovers Of Distinctive Taste, 
+                    From Seasonal Dishes Made With The Finest Fresh Ingredients, 
+                    To The Special Offers We Constantly Prepare For You To Enjoy A Unique And Unforgettable Experience.
+                  </p>
+                  <div class="gap-2" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-dark text-warning text-opacity-50"> <i class="fas fa-microphone"></i> <span>Podcast</span> </button>
+                    <button type="button" class="btn btn-dark text-warning text-opacity-50"><i class="far fa-clock"></i> <span>43 Mins</span> </button>
+                    <button type="button" class="btn btn-dark text-warning text-opacity-50"> <i class="fas fa-play"></i> <span>Play Apisade</span> </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div> 
+ 
+        </div>
+        <!-- ///////////////////////// -->
+        <div class=" my-5 py-5 row d-md-flex justify-content-center align-items-center m-auto gap-5  ">
+          <!-- ///////////1 -->
+          <div class="card border-1 border-black  bg-white text-white p-5 m-auto mt-4" style="height:220px; width:200px;">
+            <img src="image/whatsapp.jpg" class="card-img" height="220px" alt="img">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-dark text-center">Subscribe Now</h5>
+              <a href="#" class=" fs-4 position-absolute  px-4 py-5 text-primary text-opacity-50" style="margin-top:70px;"> Go To Link</a>
+            </div>
+          </div>
+          <!-- /////////////////2 -->
+          <div class="card border-1 border-black bg-white text-white p-5 m-auto mt-4" style="height:220px; width:200px;">
+            <img src="image/instgram.jpg" class="card-img" height="220px" alt="img">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-dark text-center">Subscribe Now</h5>
+              <a href="#" class=" fs-4 position-absolute  px-4 py-5 text-primary text-opacity-50" style="margin-top:70px;"> Go To Link</a>
+            </div>
+          </div>
+          <!-- ////////////////3 -->
+          <div class="card border-1 border-black  bg-white text-white m-auto p-5 mt-4 " style="height:220px; width:200px;">
+            <img src="image/linkedin.jpg" class="card-img " height="220px" alt="img">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-dark text-center">Subscribe Now</h5>
+              <a href="#" class=" fs-4 position-absolute  px-4 py-5 text-primary text-opacity-50" style="margin-top:70px;"> Go To Link</a>
+            </div>
+          </div>
+          <!-- //////////4 -->
+          <div class="card border-1 border-black bg-white text-white p-5 m-auto mt-4" style="height:220px; width:200px;">
+            <img src="image/twitter.jpg" class="card-img" height="200px"  alt="img">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-dark text-center">Subscribe Now</h5>
+              <a href="#" class=" fs-4 position-absolute  px-4 py-5 text-primary text-opacity-50" style="margin-top:70px;"> Go To Link</a>
+            </div>
+          </div>
+        </div>
+       </div>
+       <!-- //////////////////////////////// -->
+        <!-- /footer -->
+         <div class="  bg-dark pt-5 " >
+          <div class=" d-flex justify-content-evenly align-items-center " style="height: 300px; border-bottom :1px solid rgb(141, 137, 137); border-top :1px solid rgb(179, 174, 174);">
+            <div class="ps-5 ms-4" >
+              <img src="image/logo.jpeg" class=" rounded-start-pill rounded-end-pill "  width="100px" height="80px" alt=" img">
+              <span class=" text-white px-2">Good Company</span>
+            </div>
+            <div class="ps-5 ms-4">
+              <img src="image/logo.jpeg" class=" rounded-start-pill rounded-end-pill"  width="100px" height="80px" alt=" img">
+              <span class=" text-white px-2">Important Links</span>
+            </div>
+            <div class=" ps-5 ms-4">
+              <img src="image/logo.jpeg" class=" rounded-start-pill rounded-end-pill"  width="100px" height="80px" alt=" img">
+              <span class=" text-white px-2">Vision</span>
+            </div>
+          </div>
+          <div class=" d-flex justify-content-evenly align-items-center" style="height: 200px; border-bottom :1px solid rgb(141, 137, 137); ">
+            
+            <div class=" text-center">
+              <p class=" text-white">Tel:000.000.00</p>
+              <p class=" text-white">Address : Egypt</p>
+              <p class=" text-white"> Fax:000.000.00</p>
+            </div>
+            <div class=" text-center">
+              <p class=" text-warning text-opacity-75 ">Visit Us</p>
+              <p class=" text-warning text-opacity-75 ">Take A Look  </p>
+              <p class=" text-warning text-opacity-75 ">Your Health Is More Important </p>
+            </div>
+            <div class=" text-center">
+              <p class=" text-white">Services For All</p>
+              <p class=" text-white">Provide Best Services</p>
+              <p class=" text-white">You will Be Batter Than Before</p>
+            </div>
+          </div>
+          <div class=" text-center py-3">
+            <p class="text-warning text-opacity-75 "> &copy; 2025 FoodExpress. All Right Reserved. Designed By SHABAN ABD ELFTAH ABO ELKAIR.  </p>
+          </div>
+
+
+         </div>  
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="js/script.js</script>
+    </body>
+</html>
